@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Anamnese - Clínica TecnoVida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f8fa;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004d66;
+        }
+
+        fieldset {
+            border: 2px solid #007a99;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #007a99;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea, button {
+            margin-top: 5px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            background-color: #007a99;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulário de Anamnese - Clínica TecnoVida</h1>
+
+    <form action="#" method="post">
+
+        <!-- Seção 1: Dados Pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" required>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecione...</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro</option>
+                <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+            </select>
+
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" name="cpf" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <!-- Seção 2: Histórico de Saúde -->
+        <fieldset>
+            <legend>Histórico de Saúde</legend>
+
+            <label>Possui alguma doença crônica?</label>
+            <input type="radio" id="doenca_sim" name="doenca_cronica" value="sim">
+            <label for="doenca_sim">Sim</label>
+            <input type="radio" id="doenca_nao" name="doenca_cronica" value="nao">
+            <label for="doenca_nao">Não</label>
+
+            <label for="medicamentos">Quais medicamentos você utiliza regularmente?</label>
+            <textarea id="medicamentos" name="medicamentos" rows="3" placeholder="Liste os medicamentos, se houver..."></textarea>
+
+            <label>
+                <input type="checkbox" id="fuma" name="fuma" value="sim">
+                Você fuma?
+            </label>
+
+            <label for="altura">Altura (em cm):</label>
+            <input type="number" id="altura" name="altura" min="50" max="250">
+
+            <label for="peso">Peso (em kg):</label>
+            <input type="number" id="peso" name="peso" min="20" max="300">
+        </fieldset>
+
+        <!-- Seção 3: Detalhes da Consulta -->
+        <fieldset>
+            <legend>Detalhes da Consulta</legend>
+
+            <label for="motivo">Qual é o principal motivo da sua consulta?</label>
+            <textarea id="motivo" name="motivo" rows="3" required></textarea>
+
+            <label for="exercicios">Com que frequência você pratica exercícios físicos?</label>
+            <select id="exercicios" name="exercicios" required>
+                <option value="">Selecione...</option>
+                <option value="diariamente">Diariamente</option>
+                <option value="semanalmente">Semanalmente</option>
+                <option value="raramente">Raramente</option>
+                <option value="nunca">Nunca</option>
+            </select>
+
+            <label for="ultima_consulta">Data da Última Consulta (aproximada):</label>
+            <input type="date" id="ultima_consulta" name="ultima_consulta">
+
+            <label>Prefere ser contatado por:</label>
+            <input type="radio" id="contato_tel" name="contato_preferido" value="telefone">
+            <label for="contato_tel">Telefone</label>
+            <input type="radio" id="contato_email" name="contato_preferido" value="email">
+            <label for="contato_email">E-mail</label>
+
+            <button type="submit">Enviar Formulário</button>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
