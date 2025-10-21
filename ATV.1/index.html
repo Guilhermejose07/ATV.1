@@ -2,15 +2,120 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Menu de Destinos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Artefatos e Destinos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Estilo do menu */
+        h1 {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo da tabela */
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 30px auto;
+        }
+
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Destinos de Viagem em Pernambuco</h1>
-    <ul>
-        <li><a href="olinda.html">Olinda, Pernambuco</a></li>
-        <li><a href="petrolina.html">Petrolina, Pernambuco</a></li>
-        <li><a href="triunfo.html">Triunfo, Pernambuco</a></li>
-        <li><a href="piranhas.html">Piranhas, Pernambuco</a></li>
-    </ul>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="olinda.html">Olinda, Pernambuco</a></li>
+            <li><a href="petrolina.html">Petrolina, Pernambuco</a></li>
+            <li><a href="triunfo.html">Triunfo, Pernambuco</a></li>
+            <li><a href="piranhas.html">Piranhas, Pernambuco</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tabela de artefatos -->
+    <table>
+        <caption>Catálogo de Artefatos da Cápsula do Tempo</caption>
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome do Artefato</th>
+                <th scope="col">Data de Origem</th>
+                <th scope="col">Peso</th>
+                <th scope="col">Material</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>OLINDA</td>
+                <td>2025</td>
+                <td>O.6</td>
+                <td>ANALISANDO</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>PETROLINA</td>
+                <td>2025</td>
+                <td>0.4</td>
+                <td>PENDENTE</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>TRIUNFO</td>
+                <td>2025</td>
+                <td>0.6</td>
+                <td>AVALIADO</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>

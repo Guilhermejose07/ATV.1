@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Artefatos</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Catálogo de Artefatos da Cápsula do Tempo</caption>
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome do Artefato</th>
+                <th scope="col">Data de Origem</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Material</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Disquete 3.5"</td>
+                <td>1995</td>
+                <td>Dispositivo de armazenamento magnético</td>
+                <td>Plástico e metal</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Fita Cassete</td>
+                <td>1980</td>
+                <td>Mídia de áudio analógica</td>
+                <td>Plástico e fita magnética</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>CD-ROM</td>
+                <td>2001</td>
+                <td>Disco óptico de dados</td>
+                <td>Policarbonato</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
